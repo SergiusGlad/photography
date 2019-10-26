@@ -1,0 +1,87 @@
+.mobile__menu
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 320px
+    height: 100vh
+    background-color: #111
+    z-index: 100
+    &_active
+        display: block        
+    &_close
+        position: absolute
+        top: 10px
+        right: 15px
+        color: #ffffff
+        z-index: 100
+.mobile
+    width: 100%
+    display: flex
+    flex-direction: column
+    position: relative
+    &__top
+        width: 100%
+        background-image: url('../img/menu-bg.jpg')
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding: 46px 30px
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        text-align: center
+        &::before
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            background-color: rgba(0,0,0,.4)
+            content: ''
+            pointer-events: none
+            z-index: 1
+    &__logo
+        margin-bottom: 20px
+        z-index: 10
+        img
+            max-height: 110px
+    &__social
+        margin-top: 25px
+        z-index: 10
+        &_items
+            display: flex
+            list-style: none
+            justify-content: center
+            align-items: center
+            margin: 0
+            padding: 0
+        &_item
+            padding: 0 10px
+        &_link
+            color: #ffffff
+            &:hover
+                opacity: 0.7
+    &__nav
+        padding: 20px
+        &_items
+            list-style: none
+            display: flex
+            flex-direction: column
+            margin: 0
+            padding: 0
+        &_item
+            margin-top: 10px
+            margin-bottom: 10px
+        &_link
+            text-decoration: none
+            font-family: Quicksand
+            text-transform: uppercase
+            letter-spacing: 2px
+            font-weight: 400
+            font-style: normal
+            font-size: 12px
+            color: #ffffff
+            margin: 10px 0
+            

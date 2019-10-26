@@ -1,0 +1,41 @@
+@media screen and ( max-width: 990px )
+    .menu
+        display: none
+        &__icon
+            display: flex
+            position: absolute
+            right: 0
+            margin: 0
+            transform: scale(-1, 1)
+    .search
+        margin-right: 55px
+    .section
+        &-left, &-right
+            flex: 0 0 100%
+        &-sticky
+            height: 100%
+            position: relative
+            top: 0
+    .about
+        margin-bottom: 40px
+        &__holder
+            padding-left: 0
+    .social
+        position: relative
+        width: 100%
+        margin-top: 15px
+        &__items
+            display: flex
+            flex-direction: row
+        &__item
+            margin-bottom: 0
+            padding: 0 15px
+
+@media screen and ( max-width: 767px )
+    .p20-gutter
+        padding-left: 15px
+        padding-right: 15px
+    .title
+        font-size: 26px
+    .footer__img
+        max-height: 90px
