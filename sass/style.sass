@@ -1,0 +1,240 @@
+@fa-font-path:   "../font"
+    
+*, *::before, *:after
+    box-sizing: border-box
+html, body
+    margin: 0
+    padding: 0
+img
+    max-width: 100%
+    height: auto
+    border-style: none
+    vertical-align: middle
+
+body
+    font-family: 'Quicksand',sans-serif
+    font-weight: 400
+    color: #333  
+.p20-gutter
+    padding-left: 20px
+    padding-right: 20px
+.p10-gutter
+    padding-left: 10px
+    padding-right: 10px
+.section__fixed
+    position: sticky
+.title
+    font-family: "Playfair Display"
+    font-weight: 400
+    font-style: normal
+    font-size: 42px
+.quote
+    font-family: "Cutive Mono"
+    font-weight: 400
+    font-style: normal
+    color: #111
+
+.header
+    width: 100%
+    position: sticky
+    top: 0
+    background-color: #fff
+    z-index: 10
+.logo
+    margin-right: 15px
+.menu__icon
+    position: relative
+    display: none
+    z-index: 99
+    margin-right: 20px
+    height: 60px
+    width: 40px
+    &_toogle
+        position: relative
+        top: 0
+        left: 0
+        z-index: 20
+        display: flex
+        align-items: center
+        width: 100%
+        height: 100% 
+    &_line
+        width: 100%
+        height: 1px
+        background-color: #333
+        position: absolute
+        &::before
+            position: absolute
+            content: ''
+            height: 1px
+            width: 70%
+            bottom: 8px
+            background-color: inherit
+        &::after
+            position: absolute
+            content: ''
+            height: 1px
+            width: 70%
+            top: 8px
+            background-color: inherit
+.navbar
+    position: relative
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    &-left
+        display: flex
+        align-items: center
+    &-right
+        
+.menu
+    &__items
+        margin: 0
+        padding: 0
+        display: flex
+        list-style: none
+    &__item
+
+    &__link
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 12px
+        font-weight: 400
+        letter-spacing: 2px
+        padding: 0 15px
+        line-height: 1.3
+        color: #111111
+.search
+    &__img
+        width: 25px
+        height: auto
+.main
+    position: static
+.section
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    &-left, &-right
+        flex: 0 0 50%
+    &-sticky
+        position: sticky
+        top: 60px
+        height: calc(100vh - 60px)
+        display: flex
+        align-items: center
+        justify-content: center   
+    &-follow
+        margin-top: 100px
+.about
+    width: 100%
+    &__title
+        margin: 0
+    &__holder
+        text-align: center
+        padding-top: 30px
+        padding-left: 30px
+    &__bio
+        max-width: 500px
+        line-height: 1.7
+        margin: 0
+        margin: 20px 0
+.social
+    position: absolute
+    height: 100%
+    width: 30px
+    top: 0
+    left: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    &__items
+        list-style: none
+        margin: 0
+        padding: 0
+    &__item
+        margin-bottom: 10px
+    &__link
+        color: inherit
+        &_facebook:hover
+            color: #568fce
+        &_twitter:hover
+            color: #27c2f5
+        &_instagram:hover
+            color: #8823b6
+        &_dribble:hover
+            color: #ff5a91
+.article
+    margin-bottom: 10px
+.figure
+    margin: 0
+    position: relative
+
+.follow
+    display: flex
+    width: 100%
+    flex-direction: column
+    align-items: center
+    &__title
+        font-family: "Cutive Mono"
+        font-weight: 400
+        font-style: normal
+        a
+            text-decoration: none
+            color: inherit
+            opacity: .7
+            &:hover
+                opacity: 1
+    &__name
+        font-family: "Playfair Display"
+        font-weight: 400
+        font-style: normal
+        font-size: 20px
+        margin-top: 10px
+        margin-bottom: 20px
+    &__gallery
+        display: flex
+    &__item
+        flex: 0 0 11.1111%
+        padding: 5px
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.footer
+    background-color: #f2f2f2
+    &__logo
+        margin-bottom: 25px
+    &__content
+        display: flex
+        width: 100%
+        flex-direction: column
+        align-items: center
+        padding-top: 45px
+        padding-bottom: 50px
+    &__img
+        width: auto
+        height: 120px
+    &__items
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        list-style: none
+        margin: 0
+        padding: 0
+    &__link
+        padding: 0 12px
+        font-family: "Open Sans"
+        letter-spacing: 2px
+        font-weight: 400
+        font-style: normal
+        font-size: 11px
+        text-decoration: none
+        color: inherit
+        &:hover
+            opacity: 0.7
+
+@import "media"
+@import "components/header"
+@import "components/menu"
