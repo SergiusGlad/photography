@@ -58,6 +58,10 @@ app = new Vue ({
     nextPage(){
       if(this.currentPage < this.totalPages) this.currentPage++
     },
+    clearSearch(){
+      this.search = '';
+      this.currentPage = 1;
+    }
   },
   beforeMount() {
     fetch('../tech-document.json')
