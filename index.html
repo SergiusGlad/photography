@@ -48,7 +48,7 @@
             <div class="m-left">
               <div class="m-search">
               <form class="search">
-                <input placeholder="Введите наименование продукта или ЦАКТ" type="text" class="search__input" v-model="search">
+                <input placeholder="Введите наименование продукта или ЦАКТ" type="text" class="search__input" v-model="search" @keypress.enter.prevent>
                 <div class="search__icon" v-if="search==[]">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="20" height="20"
